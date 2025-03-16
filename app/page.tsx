@@ -5,18 +5,19 @@ import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import AnimatedSpotifySection from "@/components/animated-spotify-section";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center
-    px-4">
+    <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
       <About />
       <Projects />
       <Skills/>
       <Experience/>
+      <AnimatedSpotifySection />
       <Contact/>
-      </main>
+    </main>
   )
 }

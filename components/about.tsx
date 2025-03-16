@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-24 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -21,7 +21,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
       I am a software engineer who is passionate about new products, problem solving, innovation, and working in teams. I am interested in solving new challenges and its creative demands as I push myself to explore new solutions. s{" "}
-        I began my software engineering journey in highchool and college. I enjoyed various computer science topic, math, and the challenges that comes with this field. I continued to take classes and got my Master’s degree from the ASU 4+1 Program.{" "}
+        I began my software engineering journey in highchool and college. I enjoyed various computer science topic, math, and the challenges that comes with this field. I continued to take classes and got my Master's degree from the ASU 4+1 Program.{" "}
         <span className="italic"> I am always curious to learn more</span> and now as a graduate, I am looking forward to apply my skills to a work environment. My main programming languages are
         is{" "}
         <span className="font-medium">
