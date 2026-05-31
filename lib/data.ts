@@ -126,7 +126,6 @@ export const skillsData = [
       "Kubernetes",
       "Git",
       "Jira",
-      
       "Redux",
       "GraphQL",
       "Unix/Linux CLI",
