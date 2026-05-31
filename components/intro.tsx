@@ -66,7 +66,7 @@ export default function Intro() {
         <span className="font-bold">software engineer</span> with{" "}
         <span className="font-bold">entry level </span> experience. I enjoy
         building <span className="italic">innovative solutions and solving complex problems</span>. My focus is{" "}
-        <span className="underline">???</span>.
+        <span className="underline">full-stack development</span>. I am currently working at Sparton as a Software Developer and Systems Administrator.
       </motion.h1>
 
       <motion.div
@@ -91,7 +91,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/NhutNguyen_Resume.pdf"
+          href="/Nhut Nguyen Resume.pdf"
           download
         >
           Download CV{" "}

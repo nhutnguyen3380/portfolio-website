@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -12,7 +13,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 import { useTheme } from "@/context/theme-context";
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.5);
   const { theme } = useTheme();
 
   return (
@@ -44,8 +45,25 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 className="font-semibold capitalize">{item.title}</h3>
+                  <p className="font-normal !mt-0 text-sm text-gray-600 dark:text-gray-300">
+                    {item.location}
+                  </p>
+                </div>
+                {item.logo ? (
+                  <div className="flex-shrink-0 rounded-full border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-[#111827]/80">
+                    <Image
+                      src={item.logo}
+                      alt={`${item.title} logo`}
+                      width={96}
+                      height={96}
+                      className="h-24 w-24 object-contain"
+                    />
+                  </div>
+                ) : null}
+              </div>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
